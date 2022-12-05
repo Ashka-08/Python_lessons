@@ -8,6 +8,7 @@ x1 = float(input('Введите х1: '))
 y1 = float(input('Введите y1: '))
 x2 = float(input('Введите х2: '))
 y2 = float(input('Введите y2: '))
+# d = ((x1-x2)**2+(y1-y2)**2)**0.5
 import math
 d = math.sqrt((x1-x2)**2+(y1-y2)**2)
 print(f'Длина отрезка между точками координат равна {round(d, 2)}')

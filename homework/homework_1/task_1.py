@@ -6,7 +6,8 @@
 # 1 -> нет
 
 n = int(input('Введите цифру: '))
-if n == 6 or n == 7:
+# if n == 6 or n == 7:
+if 5 < n < 8:
     print('Выходной')
 elif n >= 1 and n < 6:
     print('Будний день')
