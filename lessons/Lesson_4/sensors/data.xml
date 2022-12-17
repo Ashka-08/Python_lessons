@@ -1,0 +1,5 @@
+<xml>
+    <temperature units = "c">-1</temperature>
+    <wild_speed units = "m/s">20</wild_speed>
+    <preasure units = "c">740</preasure>
+</xml>

@@ -1,0 +1,5 @@
+<xml>
+    <temperature units = "f">17.6</temperature>
+    <wind_speed units = "m/s">25</wild_speed>
+    <pressure units = "c">733</pressure>
+</xml>
