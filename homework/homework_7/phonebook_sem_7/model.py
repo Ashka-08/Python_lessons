@@ -9,12 +9,23 @@ def add_record(info):
     info.append(note)
     return info
 
-def import_scv():
-    file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Phonebook.csv'
-    with open (file, 'a') as data:
+def write_base(info):
+    file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'    
+    with open (file, 'a', encoding='utf-8') as data:
         data.write(f'{info[0]};{info[1]};{info[2]};{info[3]}\n')
 
+def import_scv():
+    base = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'
+    with open (base, 'r', encoding='utf-8') as base:
+        all = base.read()
+    file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Phonebook.csv'
+    with open (file, 'a', encoding='utf-8') as data:
+        data.write(all)
+
 def import_txt():
+    base = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'
+    with open (base, 'r', encoding='utf-8') as base:
+        all = base.read()
     file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Phonebook.txt'
-    with open (file, 'a') as data:
-        data.write(f'Фамилия: {info[0]}\nИмя: {info[1]}\nНомер телефона: {info[2]}\nОписание: {info[3]}\n\n')
+    with open (file, 'a', encoding='utf-8') as data:
+        data.write(all)
