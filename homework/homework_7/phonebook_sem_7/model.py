@@ -38,10 +38,21 @@ def export_txt():
     with open (base, 'a', encoding='utf-8') as base:
         base.writelines(all)
 
-# def export_csv():
-#     file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/export.csv'
-#     with open (file, 'r', encoding='utf-8') as data:
-#         all = data.readlines()
-#     base = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'
-#     with open (base, 'a', encoding='utf-8') as base:
-#         base.writelines(all)
+def export_csv():
+    export_csv = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/export.csv'
+    with open (export_csv, 'r', encoding='utf-8') as file:
+        data = []
+        t = []
+        for line in file:      
+            if line != '':
+                if line != '\n':
+                    t.append(line.strip())
+                else:
+                    data.append(t)
+                    t= []
+    file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'    
+    with open (file, 'a', encoding='utf-8') as base:
+        for i in data:
+            temp = ';'.join(i)
+            print(temp)
+            base.write(f'{temp}\n')
