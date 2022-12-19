@@ -12,10 +12,16 @@ def button_click():
     elif ch == 2:
         model.import_scv()
         view.success()
+        button_click()
     elif ch == 3:
         model.import_txt()
         view.success()
+        button_click()
     elif ch == 4:
-        print('End')
+        model.export_txt()
+        view.success()
+        button_click()
+    elif ch == 5:
+        print('\nEnd')
     else:
-        print('Ошибка, такого пункта меню нет')
+        print('\nОшибка, такого пункта меню нет')

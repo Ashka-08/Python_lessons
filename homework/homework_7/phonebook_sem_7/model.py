@@ -29,3 +29,19 @@ def import_txt():
     file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Phonebook.txt'
     with open (file, 'a', encoding='utf-8') as data:
         data.write(all)
+
+def export_txt():
+    file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/export.txt'
+    with open (file, 'r', encoding='utf-8') as data:
+        all = data.readlines()
+    base = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'
+    with open (base, 'a', encoding='utf-8') as base:
+        base.writelines(all)
+
+# def export_csv():
+#     file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/export.csv'
+#     with open (file, 'r', encoding='utf-8') as data:
+#         all = data.readlines()
+#     base = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_7/phonebook_sem_7/Base.txt'
+#     with open (base, 'a', encoding='utf-8') as base:
+#         base.writelines(all)
