@@ -1,0 +1,20 @@
+[
+    {
+        "id": 3,
+        "first_name": "Антонина", 
+        "last_name": "Антонова", 
+        "phone_number": "9174224111", 
+        "pozition": "Офис-менеджер", 
+        "b_date": "11.07.1994", 
+        "salary": 30000.00
+    },
+    {
+        "id": 4,
+        "first_name": "Петр", 
+        "last_name": "Петров", 
+        "phone_number": "9992222333", 
+        "pozition": "Тим-лид", 
+        "b_date": "22.11.1985", 
+        "salary": 90000.00
+    }
+]

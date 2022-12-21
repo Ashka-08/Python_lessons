@@ -13,12 +13,13 @@ def archive(txt):
         res = res + str(count) + txt[-1]
     return res
 
-def dearchive(txt):
+def dearchive(txt: str):
     number = ''
     res = ''
     for i in range(len(txt)):
         # if not txt[i].isalpha():
-        if txt[i].isdigit():
+        if txt[i].isdigit(): # чтобы подсветить метод желым цветом, нужно 
+            # добавить :str для txt в названии функции
             number += txt[i]
         else:
             res = res + txt[i] * int(number)

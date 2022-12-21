@@ -15,3 +15,8 @@ print(result_list)
 s=[2, 3, 4, 5, 6]
 t=[x*y for x, y in zip(s[-1:int(len(s)/2)-2:-1], s[0:int(len(s)/2+1):1])]
 print(t)
+
+# v3 с 8 семинара
+numbers = [2, 3, 4, 5, 6, 7, 5]
+diff = [a*b for a, b in zip(numbers, numbers[:(len(numbers)//2) - 1: -1])]
+print(diff)

@@ -20,3 +20,6 @@
 n = int(input('Введите число: '))
 d = {i: 3 * i + 1 for i in range(1, n+1)}
 print(d)
+
+# v4 с list comprehension
+print([3*i + 1 for i in range(1, n+1)])
