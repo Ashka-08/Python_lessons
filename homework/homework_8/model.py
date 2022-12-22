@@ -87,11 +87,7 @@ def del_employee(data_base, id_to_del):
     i = id_to_del - 1
     print(f"Удаляемый id {data_base[i]['id']} {data_base[i]['last_name']}")
     data_base.pop(i)
-
-# def change_employee(data_base, id_change):
-#     i = id_change - 1
     
-
 def id_count(data_base):
     n = 1
     for i in data_base:

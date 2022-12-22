@@ -6,7 +6,7 @@ def button_click():
     data_base = model.read_database()
     menu = view.show_menu()
     
-    if menu == 1:
+    if menu == 0:
         # добавление человека
         new = view.input_person(data_base)
         data_base = model.add_to_data_base(new, data_base)
@@ -17,7 +17,7 @@ def button_click():
         else:
             view.error_message()
 
-    elif menu == 2:
+    elif menu == 1:
         # удаление сотрудника по id
         model.del_employee(data_base, view.input_id_to_del())
         view.success_message()
@@ -27,6 +27,21 @@ def button_click():
             model.save_database(data_base)
         else:
             view.error_message()
+
+    elif menu == 2:
+        # редактирование
+        view.change_employee(data_base)
+        ch = int(input('Продолжить редактирование? 0 - нет, 1 - да: '))
+        if ch == 1:
+            data_base = view.change_employee(data_base)
+        else:
+            ch2 = view.save_message()
+            if ch2 == 1:
+                data_base = model.id_count(data_base) # востановление очередности id
+                model.save_database(data_base)
+                view.success_message()
+            else:
+                view.error_message()
 
     elif menu == 3:
         # поиск сотрудника по фамилии

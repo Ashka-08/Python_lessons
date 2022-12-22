@@ -4,7 +4,7 @@ def hello_message():
 def show_menu():
     print(
         'Меню:\n'
-        '1 - добавление сотрудника   2 - удаление сотрудника по id\n'
+        '0 - добавление сотрудника   1 - удаление сотрудника по id  2 - редактирование\n'
         '3 - поиск по фамилии        4 - поиск по должности         5 - поиск по зарплате\n'
         '6 - импорт в json           7 - импорт в csv \n'
         '8 - экспорт из json         9 - экспорт из csv \n'
@@ -30,12 +30,31 @@ def input_last_name():
 
 def input_id_to_del():
     return int(input('Введите id сотрудника для удаления: '))    
-
-def input_id_change():
-    return int(input('Введите id сотрудника для удаления: '))
-
-def input_key_change():
-    return input('Выберите ключ для редактирования: ')
+    
+def change_employee(data_base):
+    id_change = int(input('Введите id сотрудника для редактирования: '))
+    print(data_base[id_change-1])
+    print('Пункты, доступные для редактирования:')
+    print('id, first_name, last_name, phone_number, position, b_date, salary')
+    key_change = input('Выберите пункт для редактирования: ')
+    i = id_change - 1
+    if key_change == 'id':
+        data_base[i]['id'] = int(input('Введите id: '))
+    if key_change == 'first_name':
+        data_base[i]['first_name'] = input('Введите имя: ')
+    if key_change == 'last_name':
+        data_base[i]['last_name'] = input('Введите фамилию: ')
+    if key_change == 'phone_number':
+        data_base[i]['phone_number'] = input('Введите номер телефона: ')
+    if key_change == 'position':
+        data_base[i]['position'] = input('Введите должность: ')
+    if key_change == 'b_date':
+        data_base[i]['b_date'] = input('Введите дату рождения: ')
+    if key_change == 'salary':
+        data_base[i]['salary'] = int(input('Введите заработную плату: '))
+    print(f'Внесены следующие изменения:\n')
+    print(data_base[id_change - 1])
+    return data_base
 
 def input_position():
     return input('Введите должность сотрудников для поиска: ')
