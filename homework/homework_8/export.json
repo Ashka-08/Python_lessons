@@ -1,20 +1,20 @@
 [
     {
-        "id": 3,
-        "first_name": "Антонина", 
-        "last_name": "Антонова", 
-        "phone_number": "9174224111", 
-        "pozition": "Офис-менеджер", 
-        "b_date": "11.07.1994", 
-        "salary": 30000.00
+        "id": 1,
+        "first_name": "Антон", 
+        "last_name": "Антонов", 
+        "phone_number": "91742241221", 
+        "pozition": "Уборщик", 
+        "b_date": "16.07.1974", 
+        "salary": 15000.00
     },
     {
-        "id": 4,
+        "id": 2,
         "first_name": "Петр", 
         "last_name": "Петров", 
-        "phone_number": "9992222333", 
-        "pozition": "Тим-лид", 
-        "b_date": "22.11.1985", 
-        "salary": 90000.00
+        "phone_number": "9992112333", 
+        "pozition": "Инженер", 
+        "b_date": "22.11.1995", 
+        "salary": 50000.00
     }
 ]
