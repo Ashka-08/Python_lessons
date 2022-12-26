@@ -6,7 +6,7 @@ def read_database():
     file = 'C:/Users/Professional/Desktop/geekbrains/Python/homework/homework_8/database.json'
     with open(file, 'r', encoding='utf-8') as base:
         data_base = json.load(base)
-    return(data_base)
+    return(data_base) 
 
 def add_to_data_base(new_employee, data_base):
     data_base.append(new_employee)
