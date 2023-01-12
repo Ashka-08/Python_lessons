@@ -1,10 +1,13 @@
 # python -m pip install --upgrade pip
 # pip install isOdd
-# pip freeze
+# pip freeze просмотреть библиотеки
+# pip freeze > requirements.txt. сохранить версии библиоте в файле
+
 
 # создание виртуального окружения
 # python3 -m venv venv  
 # venv\Scripts\activate
+# deactivate
 # pip install -r requirements.txt 
 
 # from isOdd import isOdd
