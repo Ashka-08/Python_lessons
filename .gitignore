@@ -1,7 +1,19 @@
+# кэш
 __pycache__/
+
+# виртуальное окружение
 venv/
+/env
+/.env
+
+# пользовательские файлы
 config.py
 backup/
 screenchots/
+
+# скрытые папки IDE
 .idea/
+.vscode/
+
+# разобраться в ошибке
 BASED/homework/homework_9/
