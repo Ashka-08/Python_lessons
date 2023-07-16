@@ -35,6 +35,8 @@ y = x[:5]
 j = float(y)
 print(j)
 
+print(float(str(pi)[:5]))
+
 # v6
 m = int(input('введите число нужной точности 1#= '))
 pi_target = 0

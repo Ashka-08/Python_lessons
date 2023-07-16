@@ -131,7 +131,7 @@ red, green, blue = t
 print('r:{} g:{} b:{}'.format(red, green, blue))
 # r:red g:green b:blue
 
-Словари
+# Словари
 dictionary = {}
 dictionary = \
  {
