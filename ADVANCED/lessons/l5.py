@@ -242,3 +242,32 @@ item = '7'
 item = '8'
 item = '9'
 item = '10'"""
+
+def zipper(iterable1, iterable2):
+    for i in range(min(len(iterable1), len(iterable2))):
+        yield iterable1[i]
+        yield iterable2[i]
+
+print(*zipper([1, 2, 3, 4, 5], ['a', 'b', 'c', 'd', 'e'])) #1 a 2 b 3 c 4 d 5 e
+
+
+# Данная Python программа выводит числа от 1 до 15, возведенные в куб,
+# используя yield и, следовательно, генератор. Функция будет бесконечно генерировать
+# последовательность чисел в третьей степени, начиная с 1
+
+def nextCube():
+    acc = 1
+ 
+    # Бесконечный цикл
+    while True:
+        yield acc**3                
+        acc += 1 # После повторного обращения
+                # исполнение продолжится отсюда
+ 
+# Ниже мы запрашиваем у генератора и выводим ровно 15 чисел
+count = 1
+for num in nextCube():
+    if count > 15:
+        break   
+    print(num)
+    count += 1

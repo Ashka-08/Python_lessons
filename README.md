@@ -961,6 +961,51 @@ _____
         * Команда yield
         * Функции iter и next для генераторов
 
+#### ADVANCED/lessons/l6/
+
+##### ADVANCED/lessons/l6/l6.py
+* про импорт
+* из модуля импорт
+* из модуля импорт с псевдонимом
+* из модуля импорт * (звездочка - все из переменной __all__)
+* импорт собственного модуля в этой же директории
+* импорт пакета 
+* импорт модулей из пакета
+* модуль рандом:
+    > random(), randint(START, STOP), uniform(START, STOP), 
+    >
+    > choice(data), randrange(START, STOP, STEP), shuffle(data), 
+    >
+    > sample(data, 2), sample(data, 2, counts=[1, 1, 1, 1, 1, 100])
+
+##### ADVANCED/lessons/l6/super_module.py
+
+Пример модуля для области видимости переменных
+
+##### ADVANCED/lessons/l6/base_math.py
+
+Модуль с базовой математикой
+
+##### ADVANCED/lessons/l6/script.py
+
+Для запуска из консоли ОС с параметрами
+
+##### ADVANCED/lessons/l6/main.py
+
+Пример для запуска из консоли ОС с параметрами и функциями модуля рандом
+
+#### ADVANCED/lessons/l6/mathematical
+
+Пакет с модулями
+
+#### ADVANCED/lessons/l6/mathematical/base_math.py
+
+Модуль пакета с базовой математикой
+
+#### ADVANCED/lessons/l6/mathematical/advanced_math.py
+
+Модуль пакета с продвинутой математикой
+
 _____
 ### ADVANCAD/seminars/
 
@@ -1183,6 +1228,7 @@ ____
 * имена str,
 * ставка int,
 * премия str с указанием процентов вида «10.25%».
+
 Вернуть словарь с именем в качестве ключа и суммой премии в качестве значения.
 Сумма рассчитывается как ставка умноженная на процент премии.
 
@@ -1368,6 +1414,12 @@ ____
 
 Напишите функцию, которая принимает на вход строку — абсолютный путь до файла. 
 Функция возвращает кортеж из трёх элементов: путь, имя файла, расширение файла.
+
+> import os
+>
+> full_path, file = os.path.split(path)
+>
+> name, extension = file.rsplit('.', 1)
 
 ##### ADVANCED/hw5/task2.py
 
