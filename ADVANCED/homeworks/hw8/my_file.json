@@ -1,0 +1,137 @@
+{
+  "l6": {
+    "is": "dir",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 51
+  },
+  "l7": {
+    "is": "dir",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 51
+  },
+  "l8": {
+    "is": "dir",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 51
+  },
+  "l1.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 54
+  },
+  "l2.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 54
+  },
+  "l3.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 54
+  },
+  "l4.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 54
+  },
+  "l5.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons",
+    "size": 54
+  },
+  "mathematical": {
+    "is": "dir",
+    "parent_dir": "ADVANCED\\lessons\\l6",
+    "size": 61
+  },
+  "base_math.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6\\mathematical",
+    "size": 61
+  },
+  "l6.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6",
+    "size": 54
+  },
+  "main.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6",
+    "size": 56
+  },
+  "script.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6",
+    "size": 58
+  },
+  "super_module.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6",
+    "size": 64
+  },
+  "advanced_math.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6\\mathematical",
+    "size": 65
+  },
+  "__init__.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l6\\mathematical",
+    "size": 60
+  },
+  "dirs.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l7",
+    "size": 56
+  },
+  "files.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l7",
+    "size": 57
+  },
+  "biostats.csv": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 61
+  },
+  "biostats_tab.csv": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 65
+  },
+  "l8_csv.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 58
+  },
+  "l8_json.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 59
+  },
+  "l8_pickle.py": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 61
+  },
+  "new_biostats.csv": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 65
+  },
+  "new_user.json": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 62
+  },
+  "quest.csv": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 58
+  },
+  "user.json": {
+    "is": "file",
+    "parent_dir": "ADVANCED\\lessons\\l8",
+    "size": 58
+  }
+}
